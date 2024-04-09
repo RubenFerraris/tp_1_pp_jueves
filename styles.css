@@ -69,6 +69,7 @@ body{
         & li:hover{
             transform: scale(1.1);
             cursor: pointer;
+            list-style: none;
         }
     }
     }
@@ -88,8 +89,9 @@ body{
     }
 }
 }
-
-
+li{
+    list-style: none;
+}
 /* & span{
     background-color: red;
 } */
