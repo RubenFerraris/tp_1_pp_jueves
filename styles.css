@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+/* ---------------COLORS--------------- */
+.negro{
+    background-color: black;
+}
+.blanco{
+    background-color: white;
+}
+.rojo{
+    background-color: red;
+}
+.violeta{
+    background-color: rgb(100, 16, 100);
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #55acee, #292f33);
+    
+    display: grid;
+    place-items: center;
+
+& .tarjeta{
+    height: 550px;
+    width: 50%;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 5px 20px 15px -3px rgba(0, 0, 0, 0.5);
+
+    & .encabezado{
+        height: 100px;
+        width: 100%;
+        background-color: #ccd6d0;
+        border-radius: 12px 12px 0 0;
+        padding: 10px;
+    }
+
+    & .producto{
+        height: 180px;
+        width: 100%;
+        background-color: #e1e8ed;
+        padding: 10px;
+
+    & ul.sel_colores{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        & li{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            list-style: none;
+        }
+
+        & li:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+    }
+
+    & .desc_prod{
+        height: 180px;
+        width: 100%;
+        background-color: #55acee;
+        padding: 10px;
+    }
+
+    & .botonera{
+        height: 72px;
+        width: 100%;
+        background-color: #218bdb;
+        padding: 10px;
+    }
+}
+}
+
+
+/* & span{
+    background-color: red;
+} */
